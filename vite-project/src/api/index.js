@@ -5,7 +5,6 @@ api.interceptors.request.use(
   function (config) {
     // Do something before request is sent
 
-    alert('Before request...');
     return config;
   },
   function (error) {
@@ -17,7 +16,7 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   function (config) {
     // Do something before request is sent
-    alert('Before response...');
+
     return config;
   },
   function (error) {
